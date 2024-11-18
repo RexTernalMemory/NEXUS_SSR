@@ -1,0 +1,39 @@
+{
+  "name": "nexus_ssr",
+  "version": "1.0.0",
+  "main": "frontend.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon frontend.js",
+    "start-middleware": "pm2 start frontend.js --watch",
+    "reload-middleware": "pm2 reload frontend.js",
+    "stop-middleware": "pm2 stop frontend.js",
+    "list-middleware": "pm2 list",
+    "restart-all-middleware": "pm2 restart all",
+    "reload-all-middleware": "pm2 reload all",
+    "stop-zero": "pm2 stop 0",
+    "stop-one": "pm2 stop 1",
+    "delete-zero": "pm2 delete 0",
+    "delete-one": "pm2 delete 1",
+    "flush-logs": "pm2 flush",
+    "kill-all": "pm2 kill",
+    "monitoring": "pm2 monit frontend.js",
+    "log-display": "pm2 logs",
+    "log-reload": "pm2 reloadLogs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "compression": "^1.7.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-validator": "^7.2.0",
+    "nodemon": "^3.1.7",
+    "pm2": "^5.4.3",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
