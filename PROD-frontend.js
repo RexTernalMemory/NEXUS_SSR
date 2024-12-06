@@ -157,8 +157,8 @@ const { PORT } = process.env;
 //app.listen(PORT, () => console.log(`Server Status: Listening on port ${PORT}`))
 
 const options = {
-    key: fs.readFileSync("ckfi.key"),
-    cert: fs.readFileSync("STAR_ckfi_live.crt"),
+    key: fs.readFileSync("cepatkredit.key"),
+    cert: fs.readFileSync("STAR_cepatkredit_com.crt"),
 };
 https.createServer(options, app).listen(PORT, function (req, res) {
     console.log(`RUNNING: ${PORT}`);
